@@ -1,4 +1,4 @@
-/* --- 1. CSS Variables (Custom Properties) --- */
+/*  1. CSS Variables (Custom Properties)  */
 :root {
     /* Main Dark Background Color */
     --main-color: #1a1a2e;
@@ -24,7 +24,7 @@ body {
     background-color: var(--main-color);
     color: var(--secondary-color);
     line-height: 1.6;
-    padding: 0 40px; 
+    padding: 0 40px;
 }
 
 a {
@@ -32,7 +32,7 @@ a {
     text-decoration: none;
 }
 
-/* === Navbar Styling === */
+/*  Navbar Styling  */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,8 @@ a {
 }
 
 .hamburger {
-    display: none; /* Desktop par hide rahega */
+    display: none;
+    /* Desktop par hide rahega */
     font-size: 24px;
     cursor: pointer;
 }
@@ -70,7 +71,7 @@ a {
     opacity: 4;
 }
 
-/* === Hero Section Styling === */
+/*  Hero Section Styling  */
 .hero-section {
     padding: 50px 0 0;
 }
@@ -106,7 +107,7 @@ a {
 .underline {
     width: 107px;
     height: 4px;
-    background-color: var(--primary-color); 
+    background-color: var(--primary-color);
     margin-bottom: 20px;
 }
 
@@ -116,12 +117,12 @@ a {
     color: #aaa;
 }
 
-/* --- Image and Circle Positioning --- */
+/*  Image and Circle Positioning  */
 .image-wrapper {
     grid-area: image-area;
-    position: relative; 
-    width: 380px; 
-    height: 360px; 
+    position: relative;
+    width: 380px;
+    height: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,29 +130,26 @@ a {
 }
 
 .circular-background {
-    position: absolute; 
-    width: 380px; 
+    position: absolute;
+    width: 380px;
     height: 380px;
     border-radius: 50%;
     background: radial-gradient(circle at center, rgba(46, 49, 66, 0.8) 0%, var(--main-color) 70%);
-    z-index: 1; 
+    z-index: 1;
 }
 
 .image-wrapper img {
-    position: absolute; 
-    width: 350px; 
+    position: absolute;
+    width: 350px;
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
-    z-index: 2; 
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    /* FIX 1: Yellow Solid Border */
     border: 5.2px solid var(--primary-color);
 }
-/* -------------------------------------- */
 
 .services-box {
     grid-area: services;
@@ -187,7 +185,7 @@ a {
     margin-right: 15px;
 }
 
-/* === Trusted By Section (Links fixed in HTML) === */
+/* Trusted By Section */
 .trusted-by {
     display: flex;
     justify-content: space-around;
@@ -212,12 +210,23 @@ a {
 }
 
 /* Logo Colors */
-.fa-facebook-f { color: #007bff; }
-.fa-google { color: #db4437; }
-.fa-linkedin { color: #0077b5; }
-.fa-slack { color: #e01563; }
+.fa-facebook-f {
+    color: #007bff;
+}
 
-/* === What Can I Do Section === */
+.fa-google {
+    color: #db4437;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-slack {
+    color: #e01563;
+}
+
+/*  What Can I Do Section  */
 .what-i-can-do {
     display: flex;
     gap: 80px;
@@ -256,7 +265,7 @@ a {
 .stat-item .number {
     font-size: 40px;
     font-weight: 700;
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
 .stat-item .label {
@@ -280,7 +289,7 @@ a {
     background-color: var(--box-color);
     padding: 15px 25px;
     border-radius: 10px;
-    border-left: 5px solid transparent; 
+    border-left: 5px solid transparent;
     transition: border-left 0.3s;
 }
 
@@ -317,9 +326,7 @@ a {
     font-size: 20px;
 }
 
-/* ======================================= */
-/* === 4. Responsive Design (Media Queries) === */
-/* ======================================= */
+/*  4. Responsive Design (Media Queries)  */
 
 @media (max-width: 1024px) {
     body {
@@ -340,7 +347,7 @@ a {
     .image-wrapper {
         margin-top: 0;
     }
-    
+
     .what-i-can-do {
         gap: 40px;
     }
@@ -348,15 +355,20 @@ a {
 
 
 @media (max-width: 768px) {
+
     /* Navbar Adjustments */
     .navbar {
         padding: 20px 0;
     }
+
     .nav-links {
-        display: none; /* hide */
+        display: none;
+        /* hide */
     }
+
     .hamburger {
-        display: block; /* show */
+        display: block;
+        /* show */
     }
 
     /* Hero Section - Mobile Layout */
@@ -368,35 +380,37 @@ a {
             "image-area";
         grid-template-columns: 1fr;
         padding-top: 20px;
-        text-align: center; /* Center Text */
+        text-align: center;
+        /* Center Text */
     }
 
     .text-content {
         max-width: 100%;
         padding-top: 0;
     }
-    
+
     .underline {
-        margin: 10px auto 20px auto; /* Center The Underline */
+        margin: 10px auto 20px auto;
+        /* Center The Underline */
     }
 
     /* Image/Circle Center Positioning */
     .image-wrapper {
-        margin: 30px auto 0 auto; /* Margin diya aur center kiya */
-        width: 300px; /* Thoda chota kiya */
+        margin: 30px auto 0 auto;
+        width: 300px;
         height: 300px;
     }
 
     .circular-background {
-        width: 300px; 
+        width: 300px;
         height: 300px;
     }
 
     .image-wrapper img {
-        width: 270px; 
+        width: 270px;
         height: 270px;
     }
-    
+
     .services-box {
         margin-top: 0;
     }
@@ -408,7 +422,7 @@ a {
     }
 
     .trusted-logo {
-        width: 50%; /* 2x2 grid jaisa dikhega */
+        width: 50%;
         margin: 10px 0;
         justify-content: center;
     }
@@ -425,15 +439,16 @@ a {
     }
 
     .stats {
-        grid-template-columns: 1fr; /* Stack stats vertically */
+        grid-template-columns: 1fr;
+        /* Stack stats vertically */
     }
-    
+
     .right-side {
         max-width: 100%;
     }
-    
+
     .stat-item {
-        text-align: left; /* Stats ko left align kiya */
+        text-align: left;
     }
 }
 
@@ -441,9 +456,9 @@ a {
     .name {
         font-size: 48px;
     }
-    
+
     .trusted-logo {
-        width: 100%; /* Har logo alag line mein */
+        width: 100%;
         justify-content: flex-start;
         margin: 5px 0;
     }
