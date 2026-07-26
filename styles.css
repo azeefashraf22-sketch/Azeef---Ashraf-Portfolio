@@ -63,7 +63,7 @@ a {
     opacity: 4;
 }
 
-/*  Hero Section Styling  */
+/*  Hero Section  */
 .hero-section {
     padding: 50px 0 0;
 }
@@ -318,7 +318,7 @@ a {
     font-size: 20px;
 }
 
-/*  4. Responsive Design (Media Queries)  */
+/*  4. Responsive Design  */
 
 @media (max-width: 1024px) {
     body {
@@ -327,7 +327,6 @@ a {
 
     /* Hero Content Grid Adjustments */
     .hero-content {
-        /* Responsive . */
         grid-template-areas:
             "text text text"
             "image-area image-area services"
@@ -348,7 +347,7 @@ a {
 
 @media (max-width: 768px) {
 
-    /* Navbar Adjustments */
+    /* Navbar */
     .navbar {
         padding: 20px 0;
     }
@@ -363,9 +362,8 @@ a {
         /* show */
     }
 
-    /* Hero Section - Mobile Layout */
+    /* Hero Section */
     .hero-content {
-        /*  one column: Text, Services, Image/Circle */
         grid-template-areas:
             "text"
             "services"
@@ -383,10 +381,8 @@ a {
 
     .underline {
         margin: 10px auto 20px auto;
-        /* Center The Underline */
     }
 
-    /* Image/Circle Center Positioning */
     .image-wrapper {
         margin: 30px auto 0 auto;
         width: 300px;
@@ -419,7 +415,7 @@ a {
         justify-content: center;
     }
 
-    /* What Can I Do Section - Stack columns */
+    /* What Can I Do Section  */
     .what-i-can-do {
         flex-direction: column;
         padding: 50px 0;
